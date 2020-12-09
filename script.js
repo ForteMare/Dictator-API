@@ -1,6 +1,13 @@
+// Getting elements
 const body = document.querySelector("body");
 const phrases = document.querySelector(".phrases");
 
+// Buttons
+const trumpBtn = document.querySelector("#trumpBtn");
+const bushBtn = document.querySelector("#bushBtn");
+const nixonBtn = document.querySelector("#nixonBtn");
+
+// General actions
 body.addEventListener("keydown", () => {
   call();
 });
@@ -8,6 +15,12 @@ body.addEventListener("keydown", () => {
 phrases.addEventListener("click", () => {
   call();
 });
+
+// Button actions
+trumpBtn.addEventListener("click", () => {});
+bushBtn.addEventListener("click", () => {});
+nixonBtn.addEventListener("click", () => {});
+// API call function
 
 const call = () => {
   const url = `https://api.whatdoestrumpthink.com/api/v1/quotes/random`;
