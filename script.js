@@ -1,11 +1,11 @@
 const body = document.querySelector("body");
-const phrase = document.querySelector(".phrases");
+const phrases = document.querySelector(".phrases");
 
 body.addEventListener("keydown", () => {
   call();
 });
 
-body.addEventListener("click", () => {
+phrases.addEventListener("click", () => {
   call();
 });
 
@@ -18,6 +18,6 @@ const call = () => {
   request.send();
 
   request.onload = function () {
-    phrase.innerHTML = request.response["message"];
+    phrases.innerHTML = request.response["message"];
   };
 };

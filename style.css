@@ -9,6 +9,10 @@ body {
   width: 100vw;
 }
 
+h1 {
+  font-size: 5rem;
+}
+
 .display {
   display: flex;
   flex-direction: column;
@@ -23,6 +27,11 @@ body {
   font-size: 4.3rem;
   background-color: lightgrey;
   max-width: 60vw;
+}
+
+button {
+  padding: 10px;
+  font-size: 1.8rem;
 }
 
 @media screen and (max-width: 768px) {
